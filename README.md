@@ -1,3 +1,3 @@
 ## MD file
 - list
-[Link](another_folder/md-file-in-another-folder.md)
+[link](another_folder/md-file-in-another-folder.md) to another MD file
