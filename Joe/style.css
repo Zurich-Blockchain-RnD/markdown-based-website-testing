@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'Grotesk';
+  src: url('fonts\\Grotesk Light.ttf'); /* IE9 Compat Modes */
+  src: url('fonts\\Grotesk Light.ttf?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts\\Grotesk Light.ttf') format('woff'), /* Modern Browsers */
+       url('fonts\\Grotesk Light.ttf')  format('truetype');
+}
+
+body { margin: 0; } /*no need for body default extra margin*/
+ul { margin: 0; } /*no need for list default extra margin*/
+li { list-style: none; font-family: Grotesk; } /*Remove default listing bullets*/
+a { text-decoration: none; color: #404a56; }
+a:hover {color: #404a56;}
+.home_list, .main_list, .sub_list {padding-left: 15px;}
+.SideBar { /*Sidebar section styling for its width, border, padding*/
+	width: 20%;
+	height: 100%;
+	border-right: 1px solid #ddd;
+	padding-top: 10px;
+}
+.main_list {
+	padding-top: 10px;
+}
+.main_list .sub_list { 
+	padding-top: 10px; /* distance from top of heading */
+	padding-bottom: 20px; /* distance from bottom of heading */
+}
+.main_list .sub_list > li:before { /* Styling for listing Line */
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 8px;
+	height: 2px;
+	width: 12px;
+	background: #505d6b;
+	opacity: .3;
+}
